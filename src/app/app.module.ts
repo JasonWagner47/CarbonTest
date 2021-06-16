@@ -15,7 +15,7 @@ import { CatalogComponent } from './pages/catalog/catalog.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { SupportComponent } from './pages/support/support.component';
 import { Link1Component } from './pages/link1/link1.component';
-import { CustomTableComponent } from './custom-table/custom-table.component';
+import { CustomTableModule } from './custom-table/custom-table.module';
 
 @NgModule({
 	declarations: [
@@ -24,8 +24,7 @@ import { CustomTableComponent } from './custom-table/custom-table.component';
 		CatalogComponent,
 		DocsComponent,
 		SupportComponent,
-		Link1Component,
-		CustomTableComponent
+		Link1Component
 	],
 	imports: [
 		BrowserModule,
@@ -33,7 +32,8 @@ import { CustomTableComponent } from './custom-table/custom-table.component';
 		FormsModule,
 		AppRoutingModule,
 		UIShellModule,
-		IconModule
+		IconModule,
+		CustomTableModule
 	],
 	bootstrap: [AppComponent]
 })

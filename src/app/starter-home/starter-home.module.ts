@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { CustomTableModule } from '../custom-table/custom-table.module';
 import { StarterHomeComponent } from './starter-home/starter-home.component';
 import {
 	GridModule,
@@ -17,7 +17,8 @@ import { StarterHomeRoutingModule } from './starter-home-routing.module';
 		GridModule,
 		ListModule,
 		TabsModule,
-		TilesModule
+		TilesModule,
+		CustomTableModule
 	],
 	declarations: [StarterHomeComponent]
 })
