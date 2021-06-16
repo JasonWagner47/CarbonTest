@@ -15,6 +15,7 @@ import { CatalogComponent } from './pages/catalog/catalog.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { SupportComponent } from './pages/support/support.component';
 import { Link1Component } from './pages/link1/link1.component';
+import { CustomTableComponent } from './custom-table/custom-table.component';
 
 @NgModule({
 	declarations: [
@@ -23,7 +24,8 @@ import { Link1Component } from './pages/link1/link1.component';
 		CatalogComponent,
 		DocsComponent,
 		SupportComponent,
-		Link1Component
+		Link1Component,
+		CustomTableComponent
 	],
 	imports: [
 		BrowserModule,
