@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // carbon-components-angular default imports
-import { IconModule, IconService, UIShellModule } from 'carbon-components-angular';
+import { IconModule, IconService, UIShellModule, ButtonModule, TableModule, PaginationModule } from 'carbon-components-angular';
 import Notification20 from '@carbon/icons/es/notification/20';
 import UserAvatar20 from '@carbon/icons/es/user--avatar/20';
 import AppSwitcher20 from '@carbon/icons/es/app-switcher/20';
@@ -33,7 +33,8 @@ import { CustomTableModule } from './custom-table/custom-table.module';
 		AppRoutingModule,
 		UIShellModule,
 		IconModule,
-		CustomTableModule
+		CustomTableModule,
+		ButtonModule, TableModule, PaginationModule
 	],
 	bootstrap: [AppComponent]
 })

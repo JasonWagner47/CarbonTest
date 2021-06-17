@@ -1,11 +1,12 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { StarterHomeComponent } from './starter-home.component';
-
+import { CustomTableModule } from '../../custom-table/custom-table.module';
 import {
 	GridModule,
 	ListModule,
 	TabsModule,
-	TilesModule
+	TilesModule,
+	TableModule
 } from 'carbon-components-angular';
 
 describe('HomeComponent', () => {
@@ -18,9 +19,10 @@ describe('HomeComponent', () => {
 				GridModule,
 				ListModule,
 				TabsModule,
-				TilesModule
+				TilesModule,
+				TableModule
 			],
-			declarations: [ StarterHomeComponent ]
+			declarations: [ StarterHomeComponent, CustomTableModule ]
 		})
 		.compileComponents();
 	}));
