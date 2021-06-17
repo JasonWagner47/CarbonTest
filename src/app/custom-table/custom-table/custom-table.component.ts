@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TableModule } from 'carbon-components-angular';
 
 import {
  

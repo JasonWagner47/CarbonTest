@@ -4,13 +4,15 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { UIShellModule } from 'carbon-components-angular';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { CustomTableComponent } from './custom-table/custom-table/custom-table.component';
 
 describe('AppComponent', () => {
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
 			declarations: [
 				AppComponent,
-				HeaderComponent
+				HeaderComponent,
+				CustomTableComponent
 			],
 			imports: [
 				RouterTestingModule,
