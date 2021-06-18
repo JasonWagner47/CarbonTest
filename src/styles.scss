@@ -1,9 +1,157 @@
-// To change the theme uncomment the below import and which ever carbon theme you want to use
-// @import '~carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/theme-maps';
-// $carbon--theme: $carbon--theme--g100;
-// $carbon--theme: $carbon--theme--g90;
-// $carbon--theme: $carbon--theme--g10;
+@import "assets/scss/scss-utils.scss";
+@import "assets/scss/font.scss";
 
-@import "~carbon-components/scss/globals/scss/styles";
+$se-gray-35: #596171;
+$se-gray-15: #EBEFF3;
+$gray-10: #f8f8f8;
+$gray-20: #D8DDE6;
+$dark-blue-20: #002133;
 
-@import "./assets/scss/carbon-override.scss";
+
+body {
+    background-color:$gray-10;
+}
+.wrapper {
+    padding: 10rem 0 5rem 3rem;
+}
+
+table {
+    border: 1px solid $gray-20;
+    border-spacing:0;
+    border-radius: 4px;
+    max-width:500px;
+    overflow-x: scroll;
+    padding:0;
+    position: relative;
+    display: block;
+
+    tr { 
+        border: 2px solid $gray-20;
+        position: relative;
+
+        &:last-of-type {
+            td {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    th {
+        background-color: $gray-20;
+        color: $se-gray-35;
+        font-size:12px;
+        padding: 10px 20px;
+
+        &:last-of-type {
+            position:sticky;
+            position: -webkit-sticky;
+            right: 0;
+            width:101%;
+        }
+
+
+        button {
+            background-color:$gray-20;
+            border: 0px solid;
+            color: $se-gray-35;
+            font-size:12px;
+            font-weight: bold;
+            padding:0;
+            margin:0;
+            text-align: left;
+            width: 100%;
+            position: relative;
+
+            label {
+                &:after {
+                    display: block; 
+                    content: ''; 
+                    background-color: lime;
+                    width: 10px; 
+                    height: 10px;
+                    position:absolute;
+                    right:-5px;
+                    top: 50%;
+                }
+
+            }
+
+            
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            svg {
+                display: none;
+            }
+        }
+    }
+
+    td {
+        border-bottom: 1px solid $gray-20;
+        color: $dark-blue-20;
+        padding: 14px 20px;
+        margin: 0;
+        font-size:12px;
+
+        &:last-of-type {
+            position:sticky;
+            background-color:$gray-10;
+            right:  0px;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+
+            svg {
+              
+            }
+        }
+    }
+}
+input[type=checkbox] {
+    // -webkit-appearance: none;
+	// background-color: #fafafa;
+	// border: 1px solid $gray-20;
+	// padding: 9px;
+	// border-radius: 3px;
+	// display: inline-block;
+	// position: relative;
+
+    // &:checked {
+    //     background-color: $dark-blue-20;
+
+    //     &:before {
+    //         content: '\2713';
+    //         color: white;
+    //         width:auto;
+    //     }
+    // }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    display:none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+
+//   td[title^='25mps'] {
+//     // background: lightgreen;
+//     position:absolute;
+//     top: 5px;
+//     // height:120px;
+//   }

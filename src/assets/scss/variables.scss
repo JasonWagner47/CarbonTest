@@ -1,0 +1,41 @@
+// todo: comeback delete
+@import '@kite/colors/variables';
+@import '@kite/shared/mixins';
+@import 'mixins';
+
+// Project variables
+// These will override the kite variables
+
+$bp-960: 960px;
+
+// for admin overview page
+$overview-col-width: 400px;
+$overview-col-padding-right: 20px;
+
+@mixin overviewColWrapper() {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .details {
+    @include overviewCol();
+  }
+
+  .label {
+    @include overviewCol();
+  }
+
+  @include bpmd() {
+    flex-direction: row;
+  }
+}
+
+@mixin overviewCol() {
+  display: block;
+  max-width: $overview-col-width;
+  width: 100%;
+
+  @include bpmd() {
+    padding-right: $overview-col-padding-right;
+  }
+}

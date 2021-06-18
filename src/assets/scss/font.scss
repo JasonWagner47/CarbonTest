@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'spectrum-sans';
+    src: url('../fonts/SpectrumSans_W_light.woff2') format('woff2'),
+      url('../fonts/SpectrumSans_W_light.woff') format('woff');
+    // font-weight: map-get($kite-font-weight-values, light);
+    font-style: normal;
+  }
+  
+  // @font-face {
+  //   font-family: 'spectrum-sans';
+  //   src: url('../fonts/SpectrumSans_W_lightitalic.woff2') format('woff2'),
+  //     url('../fonts/SpectrumSans_W_lightitalic.woff') format('woff');
+  //   font-weight: map-get($kite-font-weight-values, light);
+  //   font-style: italic;
+  // }
+  
+  // @font-face {
+  //   font-family: 'spectrum-sans';
+  //   src: url('../fonts/SpectrumSans_W_regular.woff2') format('woff2'),
+  //     url('../fonts/SpectrumSans_W_regular.woff') format('woff');
+  //   font-weight: map-get($kite-font-weight-values, normal);
+  //   font-style: normal;
+  // }
+  
+  // @font-face {
+  //   font-family: 'spectrum-sans';
+  //   src: url('../fonts/SpectrumSans_W_italic.woff2') format('woff2'),
+  //     url('../fonts/SpectrumSans_W_italic.woff') format('woff');
+  //   font-weight: map-get($kite-font-weight-values, normal);
+  //   font-style: italic;
+  // }
+  
+  // @font-face {
+  //   font-family: 'spectrum-sans';
+  //   src: url('../fonts/SpectrumSans_W_medium.woff2') format('woff2'),
+  //     url('../fonts/SpectrumSans_W_medium.woff') format('woff');
+  //   font-weight: map-get($kite-font-weight-values, medium);
+  //   font-style: normal;
+  // }
+  
+  // @font-face {
+  //   font-family: 'spectrum-sans';
+  //   src: url('../fonts/SpectrumSans_W_mediumitalic.woff2') format('woff2'),
+  //     url('../fonts/SpectrumSans_W_mediumitalic.woff') format('woff');
+  //   font-weight: map-get($kite-font-weight-values, medium);
+  //   font-style: italic;
+  // }
+  
+  // @font-face {
+  //   font-family: 'spectrum-sans';
+  //   src: url('../fonts/SpectrumSans_W_bold.woff2') format('woff2'),
+  //     url('../fonts/SpectrumSans_W_bold.woff') format('woff');
+  //   font-weight: map-get($kite-font-weight-values, bold);
+  //   font-style: normal;
+  // }
+  
+  // @font-face {
+  //   font-family: 'spectrum-sans';
+  //   src: url('../fonts/SpectrumSans_W_extrabold.woff2') format('woff2'),
+  //     url('../fonts/SpectrumSans_W_extrabold.woff') format('woff');
+  //   font-weight: 900;
+  //   font-style: normal;
+  // }
+  
+  // @font-face {
+  //   font-family: 'spectrum-sans';
+  //   src: url('../fonts/SpectrumSans_W_bolditalic.woff2') format('woff2'),
+  //     url('../fonts/SpectrumSans_W_bolditalic.woff') format('woff');
+  //   font-weight: map-get($kite-font-weight-values, bold);
+  //   font-style: italic;
+  // }
+  
+  body {
+    font-family: 'spectrum-sans' !important; // Remove this after merging with DEVELOP
+    letter-spacing: 0px !important; // Remove this after merging with DEVELOP
+    background-color: lime;
+  }
