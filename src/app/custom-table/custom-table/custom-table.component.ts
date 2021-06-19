@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 import {
  
@@ -50,7 +50,25 @@ export class CustomTableComponent implements OnInit {
       new TableHeaderItem({ data: 'City' }),
       new TableHeaderItem({ data: 'Open State' }),
       new TableHeaderItem({ data: 'Circuit ID' }),
-      new TableHeaderItem({ data: 'Bandwidth' }),
+      new TableHeaderItem({ data: 'Bandwidth',title:'target' }),
     ];
+  }
+
+
+  @HostListener("window:scroll", [])
+  
+  onWindowScroll(x) {
+  
+  // const hasHorizontalScrollbar = table.scrollWidth > table.clientWidth;
+  const table = document.getElementById('table');
+  var hasHorizontalScrollbar = table.scrollWidth > table.offsetWidth;
+  
+  if (hasHorizontalScrollbar) {
+    document.getElementById('table-header-0-5-0').classList.add('scrolled');
+  } else {
+    document.getElementById('table-header-0-5-0').classList.remove('scrolled');
+
+  } 
+
   }
 }

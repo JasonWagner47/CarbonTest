@@ -1,18 +1,26 @@
 @import "assets/scss/scss-utils.scss";
 @import "assets/scss/font.scss";
 
+
+
+
+
 $se-gray-35: #596171;
 $se-gray-15: #EBEFF3;
 $gray-10: #f8f8f8;
 $gray-20: #D8DDE6;
 $dark-blue-20: #002133;
-
+.scrolled {
+    background-color: red;
+}
 
 body {
     background-color:$gray-10;
+    min-height: 100000px;
 }
 .wrapper {
     padding: 10rem 0 5rem 3rem;
+   
 }
 
 table {
