@@ -15,8 +15,5 @@ import {
 })
 export class CustomTableModule { 
 
-  @HostListener("window:scroll", [])
-		onWindowScroll() {
-			document.getElementById('table-header-0-5-0').classList.add('scrolled');
-		}
+ 
 }

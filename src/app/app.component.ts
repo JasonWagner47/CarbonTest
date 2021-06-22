@@ -8,14 +8,7 @@ import { Component,HostListener } from '@angular/core';
 
 
 	export class AppComponent {
-
 		
-		
-
-		@HostListener("window:scroll", [])
-		onWindowScroll() {
-			document.getElementById('target').classList.add('scrolled');
-		}
 	  }
 
 	

@@ -1,4 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, Inject, HostListener } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 import {
  
@@ -6,6 +7,9 @@ import {
   TableItem,
   TableHeaderItem
 } from 'carbon-components-angular';
+
+//JQUERY
+declare var $: any;
 
 @Component({
   selector: 'app-custom-table',
@@ -15,7 +19,7 @@ import {
 export class CustomTableComponent implements OnInit {
   model = new TableModel();
 
-  constructor() {}
+  constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit() {
     this.model.data = [
@@ -53,22 +57,18 @@ export class CustomTableComponent implements OnInit {
       new TableHeaderItem({ data: 'Bandwidth',title:'target' }),
     ];
   }
-
-
-  @HostListener("window:scroll", [])
+   
   
-  onWindowScroll(x) {
-  
-  // const hasHorizontalScrollbar = table.scrollWidth > table.clientWidth;
-  const table = document.getElementById('table');
-  var hasHorizontalScrollbar = table.scrollWidth > table.offsetWidth;
-  
-  if (hasHorizontalScrollbar) {
-    document.getElementById('table-header-0-5-0').classList.add('scrolled');
-  } else {
-    document.getElementById('table-header-0-5-0').classList.remove('scrolled');
+    // @HostListener('window:scroll', [])
+    // onWindowScroll() {
+    //   var table = document.getElementById('table');
+    //   var hasHorizontalScrollbar = table.scrollWidth <  table.clientWidth;
 
-  } 
+    //   console.log(table);
 
-  }
+    //   if (hasHorizontalScrollbar) {
+    //     document.getElementById('table-header-0-5-0').classList.add('scrolled')
+    //     console.log (hasHorizontalScrollbar);
+    //   }
+    // }
 }
