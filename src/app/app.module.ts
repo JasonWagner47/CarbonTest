@@ -17,6 +17,8 @@ import { SupportComponent } from './pages/support/support.component';
 import { Link1Component } from './pages/link1/link1.component';
 import { CustomTableModule } from './custom-table/custom-table.module';
 
+// import * as $ from "jquery";
+
 @NgModule({
 	declarations: [
 		AppComponent,

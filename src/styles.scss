@@ -19,14 +19,29 @@ body {
     min-height: 100000px;
 }
 .wrapper {
-    padding: 10rem 0 5rem 3rem;
+    padding: 1.5rem 0 3rem 4rem;
    
+}
+
+.foo {
+    
+    -webkit-box-shadow: -50px 7px 37px -11px rgba(0,0,0,0.20); 
+    box-shadow: -50px 7px 37px -11px rgba(0,0,0,0.20);
+    // transition: box-shadow 0.3s ease-in-out;
+}
+
+.bar {
+    
+    -webkit-box-shadow: 50px 7px 37px -11px rgba(0,0,0,0.20); 
+    box-shadow: 50px 7px 37px -11px rgba(0,0,0,0.20);
+    // transition: box-shadow 0.3s ease-in-out;
 }
 
 table {
     border: 1px solid $gray-20;
     border-spacing:0;
     border-radius: 4px;
+    box-sizing: border-box;
     max-width:500px;
     overflow-x: scroll;
     padding:0;
@@ -34,7 +49,7 @@ table {
     display: block;
 
     tr { 
-        border: 2px solid $gray-20;
+        border: 1px solid $gray-20;
         position: relative;
 
         &:last-of-type {
@@ -48,6 +63,7 @@ table {
         background-color: $gray-20;
         color: $se-gray-35;
         font-size:12px;
+        font-weight: bolder;
         padding: 10px 20px;
 
         &:last-of-type {
@@ -55,6 +71,15 @@ table {
             position: -webkit-sticky;
             right: 0;
             width:101%;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        &:first-of-type {
+            position:sticky;
+            position: -webkit-sticky;
+            left: 0;
+            width:101%;
+            transition: box-shadow 0.3s ease-in-out;
         }
 
 
@@ -98,6 +123,7 @@ table {
 
     td {
         border-bottom: 1px solid $gray-20;
+        box-sizing: border-box;
         color: $dark-blue-20;
         padding: 14px 20px;
         margin: 0;
@@ -107,6 +133,14 @@ table {
             position:sticky;
             background-color:$gray-10;
             right:  0px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        &:first-of-type {
+            position:sticky;
+            background-color:$gray-10;
+            left:  0px;
+            transition: box-shadow 0.3s ease-in-out;
         }
 
         button {
@@ -141,7 +175,7 @@ input[type=checkbox] {
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
-    // display:none;
+    display:none;
   }
   
   /* Track */
@@ -163,3 +197,8 @@ input[type=checkbox] {
 //     top: 5px;
 //     // height:120px;
 //   }
+.actions {
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+}

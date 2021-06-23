@@ -10,23 +10,22 @@
   //   font-family: 'spectrum-sans';
   //   src: url('../fonts/SpectrumSans_W_lightitalic.woff2') format('woff2'),
   //     url('../fonts/SpectrumSans_W_lightitalic.woff') format('woff');
-  //   font-weight: map-get($kite-font-weight-values, light);
+  //   // font-weight: map-get($kite-font-weight-values, light);
   //   font-style: italic;
   // }
   
-  // @font-face {
-  //   font-family: 'spectrum-sans';
-  //   src: url('../fonts/SpectrumSans_W_regular.woff2') format('woff2'),
-  //     url('../fonts/SpectrumSans_W_regular.woff') format('woff');
-  //   font-weight: map-get($kite-font-weight-values, normal);
-  //   font-style: normal;
-  // }
+  @font-face {
+    font-family: 'spectrum-sans';
+    src: url('../fonts/SpectrumSans_W_regular.woff2') format('woff2'),
+      url('../fonts/SpectrumSans_W_regular.woff') format('woff');
+    font-style: normal;
+  }
   
   // @font-face {
   //   font-family: 'spectrum-sans';
   //   src: url('../fonts/SpectrumSans_W_italic.woff2') format('woff2'),
   //     url('../fonts/SpectrumSans_W_italic.woff') format('woff');
-  //   font-weight: map-get($kite-font-weight-values, normal);
+  //   // font-weight: map-get($kite-font-weight-values, normal);
   //   font-style: italic;
   // }
   
@@ -34,7 +33,7 @@
   //   font-family: 'spectrum-sans';
   //   src: url('../fonts/SpectrumSans_W_medium.woff2') format('woff2'),
   //     url('../fonts/SpectrumSans_W_medium.woff') format('woff');
-  //   font-weight: map-get($kite-font-weight-values, medium);
+  //   // font-weight: map-get($kite-font-weight-values, medium);
   //   font-style: normal;
   // }
   
@@ -42,17 +41,17 @@
   //   font-family: 'spectrum-sans';
   //   src: url('../fonts/SpectrumSans_W_mediumitalic.woff2') format('woff2'),
   //     url('../fonts/SpectrumSans_W_mediumitalic.woff') format('woff');
-  //   font-weight: map-get($kite-font-weight-values, medium);
+  //   // font-weight: map-get($kite-font-weight-values, medium);
   //   font-style: italic;
   // }
   
-  // @font-face {
-  //   font-family: 'spectrum-sans';
-  //   src: url('../fonts/SpectrumSans_W_bold.woff2') format('woff2'),
-  //     url('../fonts/SpectrumSans_W_bold.woff') format('woff');
-  //   font-weight: map-get($kite-font-weight-values, bold);
-  //   font-style: normal;
-  // }
+  @font-face {
+    font-family: 'spectrum-sans';
+    src: url('../fonts/SpectrumSans_W_bold.woff2') format('woff2'),
+      url('../fonts/SpectrumSans_W_bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
   
   // @font-face {
   //   font-family: 'spectrum-sans';

@@ -1,4 +1,5 @@
 {
+
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": false
@@ -23,7 +24,7 @@
 							"src/favicon.ico"
 						],
 						"styles": ["src/styles.scss"],
-						"scripts": [],
+						"scripts": ["node_modules/jquery/dist/jquery.min.js"],
 						"aot": true
 					},
 					"configurations": {
@@ -74,7 +75,7 @@
 						"karmaConfig": "./karma.conf.js",
 						"polyfills": "src/polyfills.ts",
 						"tsConfig": "src/tsconfig.spec.json",
-						"scripts": [],
+						"scripts": ["../node_modules/jquery/dist/jquery.min.js"],
 						"styles": ["src/styles.scss"],
 						"assets": [
 							"src/favicon.ico"

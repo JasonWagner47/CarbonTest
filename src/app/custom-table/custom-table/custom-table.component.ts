@@ -1,5 +1,8 @@
-import { Component, OnInit, Inject, HostListener } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import * as jQuery from 'jquery';
+window['$'] = jQuery;
+
+declare var $: any;
 
 import {
  
@@ -8,18 +11,16 @@ import {
   TableHeaderItem
 } from 'carbon-components-angular';
 
-//JQUERY
-declare var $: any;
-
 @Component({
   selector: 'app-custom-table',
   templateUrl: './custom-table.component.html',
   styleUrls: ['./custom-table.component.scss']
 })
+
 export class CustomTableComponent implements OnInit {
   model = new TableModel();
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor() {}
 
   ngOnInit() {
     this.model.data = [
@@ -57,18 +58,5 @@ export class CustomTableComponent implements OnInit {
       new TableHeaderItem({ data: 'Bandwidth',title:'target' }),
     ];
   }
-   
   
-    // @HostListener('window:scroll', [])
-    // onWindowScroll() {
-    //   var table = document.getElementById('table');
-    //   var hasHorizontalScrollbar = table.scrollWidth <  table.clientWidth;
-
-    //   console.log(table);
-
-    //   if (hasHorizontalScrollbar) {
-    //     document.getElementById('table-header-0-5-0').classList.add('scrolled')
-    //     console.log (hasHorizontalScrollbar);
-    //   }
-    // }
 }
